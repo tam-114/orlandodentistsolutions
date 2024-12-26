@@ -1,0 +1,429 @@
+:root {
+    --darkblue: #00042B;
+    --body-weight: 500;
+    --blue: #3E8CCD;
+    --primary: #3E8CCD;
+    --primaryLight: #77baf0;;
+    --secondary: #77baf0;;
+    --secondaryLight: #77baf0;;
+    --headerColor: #1a1a1a;
+    --bodyTextColor: #4e4b66;
+    --bodyTextColorWhite: #fafbfc;
+    /* 13px - 16px */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3rem);
+    --bodyFontSize: 1rem;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+    
+
+    .cs-topper {
+        font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: inherit;
+        letter-spacing: .1em;
+        font-weight: 400;
+        color: var(--primary);
+        margin-bottom: 0.25rem;
+        display: block;
+    }
+    
+    .cs-title {
+        font-size: var(--headerFontSize);
+        font-weight: 500;
+        line-height: 1.2em;
+        text-align: inherit;
+        max-width: 43.75rem;
+        margin: 0 0 1rem 0;
+        color: var(--headerColor);
+        position: relative;
+    }
+    
+    .cs-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: inherit;
+        width: 100%;
+        max-width: 40.625rem;
+        margin: 0;
+        color: var(--bodyTextColor);
+    }
+                                
+
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: var(--body-weight);
+    font-style: normal;
+}
+
+.bg-glass {
+    background: rgba(255, 255, 255, .4);
+    backdrop-filter: blur(10px);background: rgba(255, 255, 255, .4);
+    backdrop-filter: blur(10px);
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+    .bg-glass {
+        border-radius: 10px;
+    }
+
+}
+
+.hero-bg {
+    background-image: url("/assets/images/dentist_hero.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 760px;
+}
+
+.hero-gradient{
+    background: linear-gradient(to left, rgba(16, 67, 143, 75%), #F9F9FF);
+}
+
+.h1-hero {
+    text-transform: uppercase;
+    font-size: 64px;
+    text-shadow: 0.5px 0.5px 0.5px #000;
+    color: #fff;
+    font-family: "Mona Sans", serif;
+}
+
+.p-hero {
+    color: #fff;
+}
+
+.hero-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 425px) {
+    .hero-div {
+        /* transform: translate(-50%, 25%); */
+        padding-left: 4%;
+        padding-right: 4%;
+        text-align: center;
+    }
+
+    .hero-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.button-primary {
+    cursor: pointer;
+    background-color: #fff;
+    color: var(--darkblue);
+    font-size: 16px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    width: auto;
+    max-width: 250px;
+}
+
+.button-primary:hover {
+    color: rgb(0, 4, 43, 0.5);
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+/* OUR SERVICES */
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #services-1628 {
+      padding: var(--sectionPadding);
+      background-color: #F9F9F9;
+    }
+    #services-1628 .cs-container {
+      width: 100%;
+      /* changes to 1280px at tablet */
+      max-width: 34.375em;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* 48px - 64px */
+      gap: clamp(3rem, 6vw, 4rem);
+    }
+    #services-1628 .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      text-align: left;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: flex-start;
+    }
+    #services-1628 .cs-title {
+      max-width: 20ch;
+    }
+    #services-1628 .cs-text {
+      max-width: 40rem;
+      position: relative;
+      z-index: 1;
+    }
+    #services-1628 .cs-text:after {
+      /* divider line */
+      content: "";
+      width: 100%;
+      height: 1px;
+      margin-top: 1.5rem;
+      background: var(--primary);
+      opacity: 1;
+      display: block;
+      position: relative;
+    }
+    #services-1628 .cs-chevron {
+      --chevronColor: var(--primary);
+      width: 3rem;
+      height: auto;
+    }
+    #services-1628 .cs-card-group {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      /* 16px - 20px */
+      column-gap: clamp(1rem, 2.5vw, 1.25rem);
+      /* 28px - 40px */
+      row-gap: clamp(1.75rem, 2.5vw, 2.5rem);
+    }
+    #services-1628 .cs-item {
+      list-style: none;
+      width: 100%;
+      display: flex;
+      grid-column: span 12;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    #services-1628 .cs-item:hover .cs-picture img {
+      opacity: .5;
+      transform: scale(1.2);
+    }
+    #services-1628 .cs-link {
+      text-decoration: none;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    #services-1628 .cs-picture {
+      width: 100%;
+      height: 15rem;
+      margin-bottom: 1.5rem;
+      background-color: #000;
+      overflow: hidden;
+      display: block;
+      position: relative;
+    }
+    #services-1628 .cs-picture img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transition: transform .6s, opacity .3s;
+    }
+    #services-1628 .cs-h3 {
+      font-size: 1.25rem;
+      line-height: 1.2em;
+      font-weight: 600;
+      text-align: left;
+      margin: 0 0 0.75rem 0;
+      color: var(--headerColor);
+    }
+    #services-1628 .cs-item-text {
+      font-size: 1rem;
+      line-height: 1.5em;
+      text-align: left;
+      margin: 0 0 1.5rem 0;
+      color: var(--bodyTextColor);
+    }
+    #services-1628 .cs-fake-link {
+      font-size: 1rem;
+      line-height: 1.2em;
+      font-weight: 700;
+      margin: 0;
+      margin-top: auto;
+      color: var(--primary);
+      display: inline-flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    #services-1628 .cs-fake-link:hover .cs-icon {
+      transform: translateX(0.5rem);
+    }
+    #services-1628 .cs-icon {
+      width: 1.25rem;
+      height: auto;
+      display: block;
+      transition: transform .3s;
+    }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #services-1628 .cs-container {
+      max-width: 80rem;
+    }
+    #services-1628 .cs-content {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    #services-1628 .cs-flex {
+      text-align: left;
+      width: 40vw;
+      max-width: 40rem;
+      flex: none;
+    }
+    #services-1628 .cs-title {
+      margin: 0;
+    }
+    #services-1628 h2.cs-title {
+      padding: 0.75rem 1.5rem 0.75rem 0;
+    }
+    #services-1628 .cs-text {
+      padding: 0.75rem 0 0.75rem 1.5rem;
+    }
+    #services-1628 .cs-text:after {
+      width: 1px;
+      height: 100%;
+      margin: 0 1.5rem 0 0;
+      order: -1;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    #services-1628 .cs-item {
+      grid-column: span 6;
+    }
+    #services-1628 .cs-picture {
+      /* 240px - 420px */
+      height: clamp(15rem, 33vw, 26.25rem);
+    }
+  }
+  /* Large Desktop - 1300px */
+  @media only screen and (min-width: 81.25rem) {
+    #services-1628 .cs-item {
+      grid-column: span 3;
+    }
+  }
+  
+
+  /* 
+  =============
+  ABOUT US
+  ============*/
+  .about-bg {
+    background-image: url("./images/bg-grids_gray.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: var(--sectionPadding);
+  }
+
+  .about-card_container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .about-card_container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-image: url('./images/checkmark_toothbrush.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+  }
+  
+  .about-card {
+    background-color: #fff;
+    color: var(--darkblue);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 344px;
+    height: 118px;
+    padding: 50px;
+  }
+  
+  .about-card h5 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .about-card p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+.subtitle {
+    color: var(--blue);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.section-title {
+    color: var(--darkblue);
+    font-size: 40px;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem 0.75rem 0;
+}
+
+.section-p {
+    color: var(--darkblue);
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 20px;
+}
+
+.team-section {
+    padding: var(--sectionPadding);
+}
