@@ -358,6 +358,7 @@ a:hover {
       justify-content: flex-start;
       align-items: center;
       gap: 0.5rem;
+      text-decoration: none;
     }
     #services .cs-fake-link:hover .cs-icon {
       transform: translateX(0.5rem);
