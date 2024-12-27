@@ -13,9 +13,9 @@
     --body-weight: 500;
     --blue: #3E8CCD;
     --primary: #3E8CCD;
-    --primaryLight: #77baf0;;
-    --secondary: #77baf0;;
-    --secondaryLight: #77baf0;;
+    --primaryLight: #77baf0;
+    --secondary: #77baf0;
+    --secondaryLight: #77baf0;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
@@ -768,7 +768,8 @@ MEET THE TEAM
         display: block;
         height: 100%;
         width: 100%;
-        background: #000;
+        /* background: #000; */
+        background: var(--darkblue);
         opacity: 0.8;
         top: 0;
         left: 0;
