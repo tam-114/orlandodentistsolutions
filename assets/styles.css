@@ -106,7 +106,7 @@ html, body {
 
 .hero-bg {
     background-image:  linear-gradient(to right, rgba(16, 67, 143, 75%), transparent), 
-                      url("/assets/images/dentist_hero_blank.png");
+                      url("./images/dentist_hero_blank.png");
     /* background-image: url("/assets/images/dentist_hero.png"); */
     background-position: center top;
     background-repeat: no-repeat;
