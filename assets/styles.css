@@ -82,6 +82,22 @@ html, body {
     /* background-color: #F9F9F9; */
 }
 
+body {
+    background-color: #F9F9F9;
+    background-image: 
+    url('./images/bg-circle1.png'),
+    url('./images/bg-circle2.png');
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  background-position: 
+    20% 20%, 
+    bottom right;
+}
+
+
+  
 .bg-glass {
     background: rgba(255, 255, 255, .4);
     backdrop-filter: blur(10px);background: rgba(255, 255, 255, .4);
@@ -249,7 +265,7 @@ a:hover {
 @media only screen and (min-width: 0rem) {
     #services {
       padding: var(--sectionPadding);
-      background-color: #F9F9F9;
+      /* background-color: #F9F9F9; */
     }
     #services .cs-container {
       width: 100%;
@@ -561,7 +577,7 @@ MEET THE TEAM
 @media only screen and (min-width: 0rem) {
     #meet-team {
         padding: var(--sectionPadding);
-        background-color: #F9F9F9;
+        /* background-color: #F9F9F9; */
     }
     #meet-team .cs-container {
         width: 100%;
