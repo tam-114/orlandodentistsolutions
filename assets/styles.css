@@ -445,6 +445,12 @@ a:hover {
     z-index: 1;
   }
 
+  @media (min-width: 992px) {
+    .about-card_container {
+        width: 90%;
+    }
+  }
+
   .about-card_container::before {
     content: "";
     position: absolute;
@@ -468,7 +474,7 @@ a:hover {
     align-items: start;
     flex-direction: column;
     /* max-width: 344px; */
-    max-width: 90%;
+    /* max-width: 90%; */
     min-height: 118px;
     padding: 20px 50px 20px 50px;
     height: 100%;
@@ -499,7 +505,7 @@ a:hover {
     color: var(--bodyTextColor);
     font-size: 40px;
     font-weight: 500;
-    padding: 0.75rem 1.5rem 0.75rem 0;
+    padding: 0.75rem 0 0.75rem 0;
     font-family: "Mona Medium";
 }
 
@@ -1461,5 +1467,5 @@ MEET THE TEAM
 .blockquote {
     color: var(--bodyTextColor);
     font-style: italic;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.8px;
 }
