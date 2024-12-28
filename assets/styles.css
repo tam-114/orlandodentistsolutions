@@ -104,6 +104,10 @@ html, body {
     z-index: 100;
 }
 
+.navbar-nav .nav-link {
+     font-family: "Mona Medium";
+}
+
 .hero-bg {
     background-image:  linear-gradient(to right, rgba(16, 67, 143, 75%), transparent), 
                       url("./images/dentist_hero_blank.png");
