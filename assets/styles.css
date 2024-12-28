@@ -662,7 +662,7 @@ MEET THE TEAM
         z-index: 1;
     }
     #meet-team .cs-item:hover .cs-picture {
-        background-color: #000;
+        background-color: var(--darkblue);
     }
     #meet-team .cs-item:hover .cs-picture img {
         transform: scale(1.1);
