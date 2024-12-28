@@ -809,14 +809,13 @@ MEET THE TEAM
         gap: clamp(3rem, 6vw, 4rem);
     }
     #reviews .cs-content {
-        /* set text align to left if content needs to be left aligned */
         text-align: left;
         width: 100%;
-        max-width: 32.625rem;
+        /* max-width: 32.625rem; */
         display: flex;
         flex-direction: column;
-        /* centers content horizontally, set to flex-start to left align */
-        align-items: flex-start;
+        justify-content: space-between;
+        align-items: center;
     }
 
     #reviews .cs-card-group {
@@ -919,6 +918,16 @@ MEET THE TEAM
         flex-direction: row;
         justify-content: space-between;
         align-items: stretch;
+    }
+    #reviews .cs-content {
+        text-align: left;
+        width: 100%;
+        /* max-width: 32.625rem; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: inherit;
     }
 }
 
