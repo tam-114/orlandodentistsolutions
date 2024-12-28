@@ -645,7 +645,7 @@ MEET THE TEAM
     #meet-team .cs-picture {
         width: 100%;
         /* 246px - 500px */
-        height: clamp(15.375rem, 40vw, 32.25rem);
+        height: clamp(20rem, 40vw, 32.25rem);
         overflow: hidden;
         display: block;
         position: relative;
