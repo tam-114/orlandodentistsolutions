@@ -438,6 +438,26 @@ a:hover {
     padding: var(--sectionPadding);
   }
 
+  .dots-bg2 {
+    background-image: url("./images/bg-grids_circle-right.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: var(--sectionPadding);
+  }
+
+  .dots-bg3 {
+    background-image: url("./images/bg-grids_circle-left.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: var(--sectionPadding);
+  }
+
+  .bg-gray {
+    background-color: #f9f9f9;
+  }
+
   .about-card_container {
     width: 100%;
     height: 100%;
@@ -464,6 +484,8 @@ a:hover {
     background-repeat: no-repeat;
     background-position: center;
     z-index: 2;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 999px;
   }
   
   .about-card {
@@ -478,6 +500,7 @@ a:hover {
     min-height: 118px;
     padding: 20px 50px 20px 50px;
     height: 100%;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.10);
   }
   
   .about-card h5 {
