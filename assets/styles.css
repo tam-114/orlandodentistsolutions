@@ -124,7 +124,7 @@ html, body {
 
 .h1-hero {
     text-transform: uppercase;
-    font-size: 64px;
+    font-size: clamp(1rem, 3rem, 4rem);
     text-shadow: 0.5px 1px 0.5px #000;
     color: #fff;
     font-family: "Mona Medium", serif;
@@ -469,6 +469,7 @@ a:hover {
     max-width: 90%;
     min-height: 118px;
     padding: 20px 50px 20px 50px;
+    height: 100%;
   }
   
   .about-card h5 {
@@ -1127,7 +1128,7 @@ MEET THE TEAM
     }
     #contact .cs-link {
         /* 16px - 20px */
-        font-size: clamp(1rem, 2vw, 1.25rem);
+        font-size: clamp(0.8rem, 2vw, 1.25rem);
         line-height: 1.2em;
         text-decoration: none;
         color: var(--bodyTextColor);
@@ -1426,13 +1427,16 @@ MEET THE TEAM
     }
 }
 
-.scrollToTop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    padding: 10px;
-    background-color: var(--primary);
-    border: 1px solid transparent;
-    box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.2);
+@media (min-width: 992px) {
+    .scrollToTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+        padding: 10px;
+        background-color: var(--primary);
+        border: 1px solid transparent;
+        box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.2);
+        z-index: 100;
+    }
 }
