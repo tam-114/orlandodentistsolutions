@@ -134,6 +134,12 @@ body {
     height: 860px;
 }
 
+@media (max-width: 425px) {
+    .hero-bg {
+        background-position: 30% center;
+    }
+}
+
 .hero-gradient{
     background: linear-gradient(to left, rgba(16, 67, 143, 75%), #F9F9FF);
 }
@@ -212,14 +218,14 @@ a:hover {
     .cs-button-solid {
             font-size: 1rem;
             /* 46px - 56px */
-            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+            line-height: 1.5;
             text-decoration: none;
             font-weight: 700;
             text-align: center;
             margin: 0;
             color: #fff!important;
             min-width: 9.375rem;
-            padding: 0 1.5rem;
+            padding: 1rem 1.5rem;
             background-color: var(--primary);
             border-radius: 0.25rem;
             display: inline-block;
@@ -1182,7 +1188,7 @@ MEET THE TEAM
     }
     #contact .cs-link {
         /* 16px - 20px */
-        font-size: clamp(0.8rem, 2vw, 1.25rem);
+        font-size: clamp(1rem, 2vw, 1.25rem);
         line-height: 1.2em;
         text-decoration: none;
         color: var(--bodyTextColor);
@@ -1481,7 +1487,7 @@ MEET THE TEAM
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .scrollToTop {
         position: fixed;
         bottom: 20px;
@@ -1492,6 +1498,12 @@ MEET THE TEAM
         border: 1px solid transparent;
         box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.2);
         z-index: 100;
+    }
+}
+
+@media (max-width: 767px) {
+    .scrollToTop {
+        display: none!important;
     }
 }
 
