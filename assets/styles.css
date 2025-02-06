@@ -100,8 +100,8 @@ body {
   
 .bg-glass {
     background: rgba(255, 255, 255, .4);
-    backdrop-filter: blur(10px);background: rgba(255, 255, 255, .4);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     width: 75%;
     margin: 0 auto;
     position: relative;
